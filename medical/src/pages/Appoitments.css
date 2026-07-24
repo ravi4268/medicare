@@ -1,0 +1,87 @@
+.appointment-container{
+    padding:25px;
+}
+
+.appointment-container h2{
+    text-align:center;
+    color:#0b6b66;
+    margin-bottom:20px;
+}
+
+.appointment-form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.appointment-form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.appointment-form button{
+    background:#0b6b66;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:12px;
+    cursor:pointer;
+}
+
+.appointment-form button:hover{
+    background:#138a82;
+}
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table th{
+    background:#0b6b66;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#b00000;
+}
+
+@media(max-width:768px){
+
+.appointment-container{
+    padding:15px;
+}
+
+.appointment-form{
+    grid-template-columns:1fr;
+}
+
+table{
+    min-width:700px;
+}
+
+}

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  padding: 30px;
+  background: #eef5ff;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #1565c0;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 35px rgba(0,0,0,.2);
+}
+
+.icon {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  font-size: 45px;
+  color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.card button:hover {
+  background: #084298;
+}
+
+@media(max-width:768px){
+
+.dashboard-title{
+font-size:30px;
+}
+
+.card{
+padding:25px;
+}
+
+.card h1{
+font-size:35px;
+}
+
+}

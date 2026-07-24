@@ -1,0 +1,87 @@
+.doctor-container{
+    padding:25px;
+}
+
+.doctor-container h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#0b6b66;
+}
+
+.doctor-form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.doctor-form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.doctor-form button{
+    background:#0b6b66;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    padding:12px;
+}
+
+.doctor-form button:hover{
+    background:#0f8a83;
+}
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th{
+    background:#0b6b66;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#b30000;
+}
+
+@media(max-width:768px){
+
+.doctor-container{
+    padding:15px;
+}
+
+.doctor-form{
+    grid-template-columns:1fr;
+}
+
+table{
+    min-width:700px;
+}
+
+}

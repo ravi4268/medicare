@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fc;
+}
+
+.main {
+  flex: 1;
+  margin-left: 260px;
+  margin-top: 70px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+    padding: 15px;
+    margin-top: 70px;
+  }
+}

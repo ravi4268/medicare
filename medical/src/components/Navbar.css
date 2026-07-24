@@ -1,0 +1,64 @@
+.navbar{
+    height:70px;
+    background:#0f766e;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu-icon{
+    font-size:24px;
+    cursor:pointer;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.notification{
+    position:relative;
+    font-size:22px;
+}
+
+.notification span{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    width:18px;
+    height:18px;
+    background:red;
+    border-radius:50%;
+    font-size:11px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.doctor{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+@media(max-width:768px){
+
+.nav-right span{
+display:none;
+}
+
+}

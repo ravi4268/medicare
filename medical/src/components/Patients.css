@@ -1,0 +1,107 @@
+.patients{
+    padding:20px;
+}
+
+.patients-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.add-btn{
+    background:#0f766e;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.patient-form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.patient-form input,
+.patient-form select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+.patient-form input:focus,
+.patient-form select:focus{
+    border-color:#0f766e;
+}
+
+.save-btn{
+    grid-column:1/-1;
+    background:#0f766e;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#0f766e;
+    color:white;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.patients-header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.add-btn{
+    width:100%;
+}
+
+.patient-form{
+    grid-template-columns:1fr;
+}
+
+table{
+    min-width:700px;
+}
+
+}
